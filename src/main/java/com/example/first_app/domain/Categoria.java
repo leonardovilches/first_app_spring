@@ -1,12 +1,19 @@
 package com.example.first_app.domain;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 
+import static javax.persistence.GenerationType.IDENTITY;
+
+@Entity
 public class Categoria implements Serializable   {
     private static final long serialVersionUID = 1L;
 
+    @Id
+    @GeneratedValue(strategy= IDENTITY)
     private Integer id;
+    @Column(name="nome", nullable=false)
     private String nome;
 
     public Categoria() {
