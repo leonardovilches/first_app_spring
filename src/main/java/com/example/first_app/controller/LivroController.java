@@ -1,7 +1,7 @@
 package com.example.first_app.controller;
 
 
-import com.example.first_app.repository.LivroRepository;
+import com.example.first_app.repositories.LivroRepository;
 import com.example.first_app.entity.Livro;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

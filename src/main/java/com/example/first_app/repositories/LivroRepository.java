@@ -1,4 +1,4 @@
-package com.example.first_app.repository;
+package com.example.first_app.repositories;
 
 import com.example.first_app.entity.Livro;
 import org.springframework.data.jpa.repository.JpaRepository;
